@@ -1,31 +1,25 @@
 {
   "schemaVersion": 1,
-  "id": "addon-template",
+  "id": "anvil-dupe-addon",
   "version": "${version}",
-  "name": "Addon Template",
-  "description": "An addon template for the Meteor addons.",
+  "name": "Anvil Dupe Addon",
+  "description": "An addon to automatically do anvil dupe using Meteor",
   "authors": [
-    "seasnail"
+    "timoreo"
   ],
   "contact": {
-    "repo": "https://github.com/MeteorDevelopment/meteor-addon-template"
+    "repo": "https://github.com/timoreo22/auto-anvil-dupe"
   },
-  "icon": "assets/template/icon.png",
+  "icon": "assets/autodupe/icon.png",
   "environment": "client",
   "entrypoints": {
     "meteor": [
-      "com.example.addon.Addon"
+      "fr.timoreo.autodupe.AnvilDupeAddon"
     ]
   },
-  "mixins": [
-    "addon.mixins.json"
-  ],
-  "custom": {
-    "meteor-client:color": "225,25,25"
-  },
   "depends": {
-    "java": ">=17",
-    "minecraft": ">=${mc_version}",
-    "meteor-client": "*"
+    "java": "*",
+    "minecraft": ">=1.16",
+    "meteor-client": ">0.4.3"
   }
 }
